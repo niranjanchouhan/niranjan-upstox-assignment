@@ -5,6 +5,7 @@ import io from 'socket.io-client';
 class LiveChart extends React.Component {
 
     componentDidMount(){
+         // const socket = new io('ws://kaboom.rksv.net/watch', { transports: ['websocket'], rejectUnauthorized: false });
         const socket = new io('http://kaboom.rksv.net/watch', { transports: ['websocket'], rejectUnauthorized: false });
         console.log("nsc socket",socket);
 
